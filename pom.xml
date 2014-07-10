@@ -48,6 +48,7 @@
     <tag>mustache.java-0.8.15</tag>
   </scm>
 
+<!--
   <distributionManagement>
     <repository>
       <id>sonatype-nexus-staging</id>
@@ -57,6 +58,17 @@
       <id>sonatype-nexus-snapshots</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
+  </distributionManagement>
+-->
+  <distributionManagement>
+      <repository>
+          <id>nextaudience-nexus</id>
+          <url>http://nexus.v402.rz.ham.next-audience.net/nexus/content/repositories/releases</url>
+      </repository>
+      <snapshotRepository>
+          <id>nextaudience-nexus</id>
+          <url>http://nexus.v402.rz.ham.next-audience.net/nexus/content/repositories/snapshots</url>
+      </snapshotRepository>
   </distributionManagement>
 
   <build>
