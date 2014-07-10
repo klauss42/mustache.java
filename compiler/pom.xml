@@ -3,7 +3,7 @@
   <parent>
     <artifactId>mustache.java</artifactId>
     <groupId>com.github.spullara.mustache.java</groupId>
-    <version>0.8.15</version>
+    <version>0.8.15.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -168,8 +168,22 @@
         <artifactId>maven-bundle-plugin</artifactId>
         <configuration>
           <instructions>
-            <!--<Export-Package>*</Export-Package>
-            <Import-Package>*</Import-Package>-->
+            	<Import-Package>
+				!com.twitter.util,
+				!org.jruby;version="[1.6,2)",
+				!org.jruby.embed;version="[1.6,2)",
+				!scala,
+				!scala.collection,
+				!scala.collection.generic,
+				!scala.reflect,
+				!scala.runtime,
+				com.google.common.base;version="[16.0,17)",
+				com.google.common.cache;version="[16.0,17)",
+				com.google.common.io;version="[16.0,17)",
+				com.google.common.util.concurrent;version="[16.0,17)"
+	
+            	</Import-Package>
+
           </instructions>
         </configuration>
       </plugin>
